@@ -7,7 +7,7 @@ int main(){
     int num_alunos;
 	float media, soma=0, i, nota=0;
     
-    printf("\t\t\tMédia de X alunos de uma turma\n\n");
+    printf("\t\t\tMÃ©dia de X alunos de uma turma\n\n");
 
 	printf("Informe a quantidade de alunos que existem na turma: ");
 	scanf("%d", &num_alunos);
@@ -17,16 +17,17 @@ int main(){
 		for(i=1; i<=num_alunos; i++){
 			printf("\n\nInforme a nota do aluno: ");
 			scanf("%f", &nota);
-            soma += nota; //Ocorre a incrementação do valor a cada loop e soma.. atribuição
+            soma += nota; //Ocorre a incrementaÃ§Ã£o do valor a cada loop e soma.. atribuiÃ§Ã£o
         }
         
 		media = soma/num_alunos;
 		
-	    printf("\nA Média aritmética da turma de %.0f alunos, corresponde a: %.2f\n", soma, media); 
+	    printf("\nA MÃ©dia aritmÃ©tica da turma de %.0f alunos, corresponde a: %.2f\n", soma, media); 
+    } else{
+        printf("O nÃºmero informado Ã© invÃ¡lido (menor ou igual a zero!\n\n");
     }
         
     return 0;
     
 }
-
 
